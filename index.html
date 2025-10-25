@@ -1,17 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentato</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Offside&display=swap" rel="stylesheet">
+
+  <title>PawPal</title>
+  <style>
+    body {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      background: #000; /* Adjust as needed */
+    }
+    header {
+      text-align: center;
+      color: #FF0000;
+      font-size: 200px;
+      font-family: 'Jaro', sans-serif;
+      font-weight: 400;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 58px;
+      left: 209px;
+      width: 866px;
+      height: 231px;
+    }
+    .gradient {
+      position: absolute;
+      left: 1147px;
+      top: 670px;
+      width: 1011px;
+      height: 464px;
+      transform: rotate(180deg);
+      transform-origin: top left;
+      opacity: 0.5;
+      background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 9999px;
+    }
+    main {
+      position: absolute;
+      top: 325px;
+      left: 368px;
+      width: 548px;
+      height: 286px;
+      text-align: center;
+      color: white;
+      font-size: 64px;
+      font-family: 'Offside', sans-serif;
+      font-weight: 400;
+    }
+    .paw-image {
+      position: absolute;
+      width: 137.03px;
+      height: 79.38px;
+      border-radius: 70.5px;
+    }
+    .paw1 { left: 115.05px; top: 73px; transform: rotate(47deg); transform-origin: top left; }
+    .paw2 { left: 1263.62px; top: 158.53px; transform: rotate(125deg); transform-origin: top left; }
+    .paw3 { left: 57px; top: 778.6px; transform: rotate(-35deg); transform-origin: top left; }
+
+    footer {
+      position: absolute;
+      left: 588px;
+      top: 700px;
+      width: 105.49px;
+      height: 107px;
+      background: #FF0000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+
+    .collar {
+      position: absolute;
+      left: 588px;
+      top: 750.29px;
+      width: 107px;
+      height: 3.59px;
+      background: #3D3B3B;
+      border-radius: 16px;
+    }
+
+    .ear {
+      position: absolute;
+      width: 39.98px;
+      height: 18.35px;
+      background: #D9D9D9;
+      border-radius: 9999px;
+    }
+
+    .ear.left { left: 591.69px; top: 729.42px; transform: rotate(-40deg); transform-origin: top left; }
+    .ear.right { left: 658.89px; top: 703.59px; transform: rotate(40deg); transform-origin: top left; }
+
+    .inner-ear {
+      position: absolute;
+      width: 9.75px;
+      height: 5.62px;
+      background: #3D3B3B;
+      border-radius: 9999px;
+    }
+
+    .inner-ear.left { left: 606.45px; top: 724.26px; transform: rotate(-40deg); transform-origin: top left; }
+    .inner-ear.right { left: 669.11px; top: 717.96px; transform: rotate(40deg); transform-origin: top left; }
+  </style>
 </head>
 <body>
-    <h1>PAWPAL</h1>
-    <p>Your Personal Pet Monitoring Buddy</p>
+  <header>P A W P A L</header>
+  <section class="gradient"></section>
+  <main>Your Personal Pet Monitoring Buddy</main>
+
+  <img class="paw-image paw1" src="https://placehold.co/137x79" alt="Decorative paw print">
+  <img class="paw-image paw2" src="https://placehold.co/137x79" alt="Decorative paw print">
+  <img class="paw-image paw3" src="https://placehold.co/137x79" alt="Decorative paw print">
+
+  <footer></footer>
+  <span class="collar"></span>
+  <span class="ear left"></span>
+  <span class="ear right"></span>
+  <span class="inner-ear left"></span>
+  <span class="inner-ear right"></span>
 </body>
 </html>
