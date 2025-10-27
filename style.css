@@ -1,6 +1,6 @@
 body { 
-    background-image: url("dotted.jpg");
-    opacity: 27%;
+    background-image: url("dotted.png");
+    background-color: black;
 }
 
 h1 {

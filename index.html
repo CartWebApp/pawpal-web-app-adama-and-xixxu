@@ -6,15 +6,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Offside&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
   <title>PawPal</title>
   <style>
     body {
-      position: relative;
-      overflow: hidden;
       margin: 0;
-      background: #000; /* Adjust as needed */
+      text-align: center;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
     header {
       text-align: center;
       color: #FF0000;
@@ -27,6 +31,7 @@
       left: 209px;
       width: 866px;
       height: 231px;
+
     }
     .gradient {
       position: absolute;
@@ -58,7 +63,13 @@
       height: 79.38px;
       border-radius: 70.5px;
     }
-    .paw1 { left: 115.05px; top: 73px; transform: rotate(47deg); transform-origin: top left; }
+    .paw1 { 
+      left: 115.05px;
+       top: 73px; 
+       transform: rotate(47deg); 
+       transform-origin: top left;
+    }
+
     .paw2 { left: 1263.62px; top: 158.53px; transform: rotate(125deg); transform-origin: top left; }
     .paw3 { left: 57px; top: 778.6px; transform: rotate(-35deg); transform-origin: top left; }
 
@@ -83,7 +94,7 @@
       border-radius: 16px;
     }
 
-    .ear {
+    .eye {
       position: absolute;
       width: 39.98px;
       height: 18.35px;
@@ -91,19 +102,50 @@
       border-radius: 9999px;
     }
 
-    .ear.left { left: 591.69px; top: 729.42px; transform: rotate(-40deg); transform-origin: top left; }
-    .ear.right { left: 658.89px; top: 703.59px; transform: rotate(40deg); transform-origin: top left; }
+    .eye.left { 
+      left: 591.69px; 
+      top: 715.42px; 
+      width: 36.48px;
+      height: 21.81px;
+      rotate: -40deg;
+      border-radius: 50%;
+    }
+    .eye.right { 
+      left: 651.69px; 
+      top: 715.42px;
+      width: 36.48px;
+      height: 21.81px;
+      rotate: 40deg;
+      border-radius: 50%;
+    }
 
-    .inner-ear {
+    .inner-eye {
       position: absolute;
-      width: 9.75px;
-      height: 5.62px;
       background: #3D3B3B;
       border-radius: 9999px;
     }
 
-    .inner-ear.left { left: 606.45px; top: 724.26px; transform: rotate(-40deg); transform-origin: top left; }
-    .inner-ear.right { left: 669.11px; top: 717.96px; transform: rotate(40deg); transform-origin: top left; }
+    .inner-eye.left { 
+      left: 607.45px; 
+      top: 720.26px; 
+      height: 8.68px;
+      width: 6.68px;
+      border-radius: 50%;
+      display: inline-block;
+      rotate: 40.24deg;
+    }
+
+    .inner-eye.right { 
+      left: 668.11px; 
+      top: 718.96px; 
+      height: 8.68px;
+      width: 6.68px;
+      border-radius: 50%;
+      display: inline-block;
+      rotate: -40.24deg;
+
+    }
+
   </style>
 </head>
 <body>
@@ -111,15 +153,15 @@
   <section class="gradient"></section>
   <main>Your Personal Pet Monitoring Buddy</main>
 
-  <img class="paw-image paw1" src="https://placehold.co/137x79" alt="Decorative paw print">
-  <img class="paw-image paw2" src="https://placehold.co/137x79" alt="Decorative paw print">
-  <img class="paw-image paw3" src="https://placehold.co/137x79" alt="Decorative paw print">
+  <img class="paw-image paw1" src="arrow.png" alt="Decorative paw print">
+  <img class="paw-image paw2" src="arrow.png" alt="Decorative paw print">
+  <img class="paw-image paw3" src="arrow.png" alt="Decorative paw print">
 
   <footer></footer>
   <span class="collar"></span>
-  <span class="ear left"></span>
-  <span class="ear right"></span>
-  <span class="inner-ear left"></span>
-  <span class="inner-ear right"></span>
+  <span class="eye left"></span>
+  <span class="eye right"></span>
+  <span class="inner-eye left"></span>
+  <span class="inner-eye right"></span>
 </body>
 </html>
