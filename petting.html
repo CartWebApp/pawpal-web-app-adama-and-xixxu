@@ -156,13 +156,25 @@
       rotate: 46.16deg;
 
     }
-
+    
+    #myDropdown {
+      position: absolute;
+      top: 600px;
+      left: 925px;
+      width: 200px;
+      height: 40px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 2px solid #FF0000;
+      padding: 5px 10px;
+    }
   </style>
 </head>
 <body>
   <header>P A W P A L</header>
   <section class="gradient"></section>
   <main>Pick Your Pet</main>
+  
 
   <img class="paw-image paw1" src="arrow.png" alt="Decorative paw print">
   <img class="paw-image paw2" src="arrow.png" alt="Decorative paw print">
@@ -174,5 +186,17 @@
   <span class="eye right"></span>
   <span class="inner-eye left"></span>
   <span class="inner-eye right"></span>
+
+
+<select id="myDropdown" name="myDropdown">
+  <option value="Bird">Bird</option>
+  <option value="Dog">Dog</option>
+  <option value="Hampster">Hampster</option>
+  <option value="Snake">Snake</option>
+  <option value="Lizard">Lizard</option>
+  <option value="Turtle">Turtle</option>
+  <option value="Cat">Cat</option>
+  <option value="Bug">Insect/Bug</option>
+</select>
 </body>
 </html>
