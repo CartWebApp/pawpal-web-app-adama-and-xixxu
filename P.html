@@ -8,49 +8,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Offside&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-  <title>PawPal</title>
+  <title>Wait.. What?</title>
   <style>
 
 
-body {
-      margin: 0 auto;
+    body {
+      margin: 0;
       text-align: center;
+      left: -100px;
     }
 
     * {
       box-sizing: border-box;
+      
     }
 
     header {
       text-align: center;
-      color: #FF0000;
+      color: #FF00ff;
       font-size: 150px;
       font-family: 'Jaro', sans-serif;
       font-weight: 400;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       position: absolute;
       top: 25px;
-      left: 637px;
+      left: 563px;
       width: 866px;
       height: 231px;
 
     }
-    .gradient {
+    .defnotgradient {
       position: absolute;
-      left: 1575px;
+      left: 1525px;
       top: 870px;
       width: 1011px;
       height: 664px;
       transform: rotate(180deg);
       transform-origin: top left;
-      opacity: 0.5;
-      background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 100%);
+      background: #3D3d3d;
       border-radius: 9999px;
     }
     main {
       position: absolute;
       top: 325px;
-      left: 796px;
+      left: 746px;
       width: 548px;
       height: 286px;
       text-align: center;
@@ -73,14 +74,14 @@ body {
     }
 
     .paw2 { 
-      left: 1693.62px; 
+      left: 1643.62px; 
       top: 158.53px; 
       transform: rotate(125deg); 
       transform-origin: top left; 
     }
 
     .paw3 { 
-      left: 487px; 
+      left: 437px; 
       top: 778.6px; 
       transform: rotate(-35deg); 
       transform-origin: top left; 
@@ -88,11 +89,11 @@ body {
 
     footer {
       position: relative;
-      left: 353px;
+      left: 303px;
       top: 475px;
       width: 262px;
       height: 131px;
-      background: #FF0000;
+      background: #FF00ff;
       rotate: 90deg;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-top-left-radius: 0px;
@@ -103,12 +104,12 @@ body {
 
     .jaw {
       position: absolute;
-      left: 1528px;
+      left: 1478px;
       top: 475px;
       width: 262px;
       height: 131px;
       rotate: 90deg;
-      background: #FF0000;
+      background: #FF00ff;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-top-left-radius: 150px;
       border-top-right-radius: 150px;
@@ -125,7 +126,7 @@ body {
     }
 
     .eye.left { 
-      left: 429.69px; 
+      left: 379.69px; 
       top: 440.42px; 
       width: 109.44px;
       height: 65.43px;
@@ -133,7 +134,7 @@ body {
       border-radius: 50%;
     }
     .eye.right { 
-      left: 429.69px; 
+      left: 379.69px; 
       top: 575.42px;
       width: 109.44px;
       height: 65.43px;
@@ -148,7 +149,7 @@ body {
     }
 
     .inner-eye.left { 
-      left: 448.45px; 
+      left: 398.45px; 
       top: 575.26px; 
       height: 26.04px;
       width: 20.04px;
@@ -158,7 +159,7 @@ body {
     }
 
     .inner-eye.right { 
-      left: 448.45px; 
+      left: 398.45px; 
       top: 480.96px; 
       height: 26.04px;
       width: 20.04px;
@@ -167,36 +168,44 @@ body {
       rotate: 46.16deg;
 
     }
-    
-    #myDropdown {
+
+    .fact {
       position: absolute;
-      top: 450px;
-      left: 953px;
-      width: 200px;
-      height: 40px;
-      font-size: 18px;
-      list-style: none;
-      padding: 5px 10px;
-      font-family: 'jaro';
-      font-size: 50px;
-      color: #FF0000;
+      top: 425px;
+      left: 646px;
+      width: 748px;
+      height: 286px;
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 48px;
+      font-family: 'Offside', sans-serif;
+      font-weight: 400;
     }
 
-    a {
-      text-decoration: none;
-      color: #FF0000;
+    .house {
+        position: absolute;
+        left: 1000px;
+        top: 900px;
+        width: 50px;
+        height: 50px;
+        filter: invert(100%);
     }
 
-    a:hover {
-      text-decoration: underline;
+    .question {
+        position: absolute;
+        left: 1000px;
+        top: 800px;
+        width: 50px;
+        height: 50px;
+        filter: invert(100%);
     }
   </style>
 </head>
 <body>
   <header>P A W P A L</header>
-  <section class="gradient"></section>
-  <main>Choose your Breed</main>
-  
+  <section class="defnotgradient"></section>
+  <main>Did you know:</main>
+  <p class="fact">Cats have five toes on their front paws, but only four toes on their back paws.</p>
 
   <img class="paw-image paw1" src="arrow.png" alt="Decorative paw print">
   <img class="paw-image paw2" src="arrow.png" alt="Decorative paw print">
@@ -209,11 +218,10 @@ body {
   <span class="inner-eye left"></span>
   <span class="inner-eye right"></span>
 
+  <img src="info.png" class="question">
+  <a class="question" href="#"></a>
 
-<ul id="myDropdown" name="myDropdown">
-  <li value="Labrador"><a href="lab.html">Labrador</a></li>
-  <li value="Terrier"><a href="terrier.html">Terrier</a></li>
-  <li value="German Shepard"><a href="Germ.html">German Shepard</a></li>
-</ul>
+  <img src="house.png" class="house">
+  <a class="house" href="info.html"></a>
 </body>
 </html>
