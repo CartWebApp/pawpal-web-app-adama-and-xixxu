@@ -29,3 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
         factParagraph.textContent = getRandomFact();
     });
 });
+

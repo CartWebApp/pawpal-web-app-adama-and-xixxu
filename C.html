@@ -281,16 +281,68 @@
 
 
   
-  <img class="do" src="cyan-arrow.png">
-  <img class="re" src="cyan-arrow.png">
-  <img class="mi" src="cyan-arrow.png">
-  <img class="fa" src="cyan-arrow.png">
-  <img class="sol" src="cyan-arrow.png">
-  <img class="la" src="cyan-arrow.png">
-  <img class="ti" src="cyan-arrow.png">
-  <img class="do2" src="cyan-arrow.png">
+  <img class="do" onclick="play()" src="cyan-arrow.png">
+  <img class="re" onclick="re()" src="cyan-arrow.png">
+  <img class="mi" onclick="mi()" src="cyan-arrow.png">
+  <img class="fa" onclick="fa()" src="cyan-arrow.png">
+  <img class="sol" onclick="sol()" src="cyan-arrow.png">
+  <img class="la" onclick="la()" src="cyan-arrow.png">
+  <img class="ti" onclick="ti()" src="cyan-arrow.png">
+  <img class="do2" onclick="do2()" src="cyan-arrow.png">
 
   <img src="house.png" class="house">
   <a class="house" href="appointment.html"></a>
+
+
+    <audio id="audio" src="z-do.mp3"></audio>
+    <audio id=".er" src="z-re.mp3"></audio>
+    <audio id=".im" src="z-mi.mp3"></audio>
+    <audio id=".af" src="z-fa.mp3"></audio>
+    <audio id=".los" src="z-sol.mp3"></audio>
+    <audio id=".al" src="z-la.mp3"></audio>
+    <audio id=".it" src="z-ti.mp3"></audio>
+    <audio id=".od2" src="z-do2.mp3"></audio>
+      <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+
+      function re() {
+        var audio = document.getElementById(".er");
+        audio.play();
+      }
+
+      function mi() {
+        var audio = document.getElementById(".im");
+        audio.play();
+      }
+
+      function fa() {
+        var audio = document.getElementById(".af");
+        audio.play();
+      }
+      
+      function sol() {
+        var audio = document.getElementById(".los");
+        audio.play();
+      }
+
+      function la() {
+        var audio = document.getElementById(".al");
+        audio.play();
+      }
+      
+      function ti() {
+        var audio = document.getElementById(".it");
+        audio.play();
+      }
+
+      function do2() {
+        var audio = document.getElementById(".od2");
+        audio.play();
+      }
+      
+    </script>
 </body>
 </html>
