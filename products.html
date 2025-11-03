@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawPal - Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lemon&family=Offside&family=Tiny5&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Offside', sans-serif;
+}
+
+.products-page {
+  width: 1283px;
+  height: 830px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.products-bg {
+  width: 1165px;
+  height: 538px;
+  left: 59px;
+  top: 185px;
+  position: absolute;
+  background: #737373;
+  border-radius: 105px;
+  border: 4px solid black;
+}
+
+
+.products-header {
+  position: absolute;
+  top: 38px;
+  left: 34px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-title {
+  color: #ffff00;
+  font-size: 80px;
+  font-family: 'Tiny5', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+    .guy {
+      position: absolute;
+      left: 600px;
+      top: 800px;
+      width: 105.49px;
+      height: 107px;
+      background: #ffff00;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 9999px;
+    }
+
+    .mouth {
+      position: absolute;
+      left: 600px;
+      top: 850.29px;
+      width: 107px;
+      height: 3.59px;
+      background: #3D3B3B;
+      border-radius: 16px;
+    }
+
+    .eye {
+      position: absolute;
+      width: 39.98px;
+      height: 18.35px;
+      background: #D9D9D9;
+      border-radius: 9999px;
+    }
+
+    .eye.left { 
+      left: 603.69px; 
+      top: 815.42px; 
+      width: 36.48px;
+      height: 21.81px;
+      rotate: -40deg;
+      border-radius: 50%;
+    }
+    .eye.right { 
+      left: 663.69px; 
+      top: 815.42px;
+      width: 36.48px;
+      height: 21.81px;
+      rotate: 40deg;
+      border-radius: 50%;
+    }
+
+    .inner-eye {
+      position: absolute;
+      background: #3D3B3B;
+      border-radius: 9999px;
+    }
+
+    .inner-eye.left { 
+      left: 616.45px; 
+      top: 820.26px; 
+      height: 8.68px;
+      width: 6.68px;
+      border-radius: 50%;
+      display: inline-block;
+      rotate: 40.24deg;
+    }
+
+    .inner-eye.right { 
+      left: 680.11px; 
+      top: 818.96px; 
+      height: 8.68px;
+      width: 6.68px;
+      border-radius: 50%;
+      display: inline-block;
+      rotate: -40.24deg;
+    }
+        .nav {
+            width: 414px;
+            height: 93px;
+            left: 400px;
+            top: 38px;
+            position: absolute;
+        }
+        .nav .nav-bg {
+            display: block;
+            width: 414px;
+            height: 93px;
+            left: 0;
+            top: 0;
+            position: absolute;
+            background: black;
+            border-radius: 51px;
+        }
+        .nav .nav-circle {
+            display: block;
+            width: 82.8px;
+            height: 84.55px;
+            top: 5.07px;
+            position: absolute;
+            border-radius: 9999px;
+            background: white;
+        }
+        .nav .c1 { left: 0; }
+        .nav .c2 { left: 82.8px; }
+        .nav .c3 { left: 165.6px; }
+        .nav .c4 { left: 248.4px; }
+        .nav .c5 { left: 331.2px; }
+
+        .icon-1 {
+            width: 47px;
+            height: 47px;
+            left: 100px;
+            top: 23px;
+            position: absolute;
+        }
+        .icon-2 {
+            width: 47px;
+            height: 47px;
+            left: 17px;
+            top: 23px;
+            position: absolute;
+        }
+
+        .icon-3 {
+            width: 47px;
+            height: 47px;
+            left: 183px;
+            top: 23px;
+            position: absolute;
+        }
+
+        .icon-4 {
+            width: 47px;
+            height: 47px;
+            left: 266px;
+            top: 23px;
+            position: absolute;
+        }
+        .icon-5 {
+            width: 41px;
+            height: 41px;
+            left: 352px;
+            top: 26px;
+            position: absolute;
+        }
+
+        .switch {
+          position: absolute;
+          width: 300px;
+          height: 200px;
+          left: 200px;
+          top: 250px;
+          background: #ffffff;
+          border-radius: 20px;
+        }
+
+        .switch1 {
+          position: absolute;
+          width: 300px;
+          height: 200px;
+          left: 800px;
+          top: 250px;
+          background: #ffffff;
+          border-radius: 20px;
+        }
+
+        .product {
+          position: absolute;
+          width: 140px;
+          height: 140px;
+          left: 280px;
+          top: 290px;
+        }
+
+        .product1 {
+          position: absolute;
+          width: 140px;
+          height: 140px;
+          left: 880px;
+          top: 290px;
+        }
+
+        .set {
+          position: absolute;
+          font-family: 'offside';
+          left: 225px;
+          top: 400px;
+          font-size: 50px;
+          color: white;
+          text-align: center;
+        }
+
+        .set1 {
+          position: absolute;
+          font-family: 'offside';
+          left: 750px;
+          top: 400px;
+          font-size: 50px;
+          color: white;
+          text-align: center;
+          width: 400px;
+        }
+
+        .set2 {
+          position: absolute;
+          font-family: 'jaro';
+          left: 315px;
+          top: 550px;
+          font-size: 40px;
+          color: white;
+        }
+
+        .set3 {
+          position: absolute;
+          font-family: 'jaro';
+          left: 900px;
+          top: 550px;
+          font-size: 40px;
+          color: white;
+        }
+</style>
+<body>
+  <section class="products-page">
+    <section class="products-bg"></section>
+    <header class="products-header">
+      <h1 class="products-title">PRODUCTS</h1>
+      <nav class="nav" role="navigation" aria-label="main-navigation">
+            <span class="nav-bg"></span>
+            <span class="nav-circle c1"></span>
+            <span class="nav-circle c2"></span>
+            <span class="nav-circle c3"></span>
+            <span class="nav-circle c4"></span>
+            <span class="nav-circle c5"></span>
+
+            <img class="icon-1" src="info.png" alt="icon"/>
+            <img class="icon-2" src="calendar.png" alt="icon"/>
+            <img class="icon-3" src="house.png" alt="icon"/>
+            <img class="icon-4" src="cart.png" alt="icon"/>
+            <img class="icon-5" src="Cogwheel.png" alt="icon"/>
+
+            <a class="icon-1" href="info.html"></a>
+            <a class="icon-2" href="appointment.html"></a>
+            <a class="icon-3" href="main.html"></a>
+            <a class="icon-4" href="products.html"></a>
+            <a class="icon-5" href="settings.html"></a>
+        </nav>
+    </header>
+
+    <span class="switch"></span>
+    <span class="switch1"></span>
+
+    <img class="product" src="collar.png">
+    <img class="product1" src="chew.png">
+
+    <p class="set">Custom<br> Dog Collar</p>
+    <p class="set1">Simple Chew Toy</p>
+    <p class="set2">$19.99</p>
+    <p class="set3">$9.99</p>
+
+      <a class="guy" href="Y.html"></a>
+  <span class="mouth"></span>
+  <span class="eye left"></span>
+  <span class="eye right"></span>
+  <span class="inner-eye left"></span>
+  <span class="inner-eye right"></span>
+  </section>
+</body>
+</html>
