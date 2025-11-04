@@ -11,7 +11,9 @@ const animalFacts = [
     "A shrimp's heart is in its head.",
     "Sea otters hold hands while sleeping so they don't drift apart.",
     "Kangaroos can't walk backwards.",
-    "Frogs absorb water through their skin and don't need to drink."
+    "Frogs absorb water through their skin and don't need to drink.",
+    "Starfish eat by taking out thier stomach and using thier stomach acid to disove prey",
+    "sharks as a species are older than Trees and even older than Saturn's rings "
 ];
 
 function getRandomFact() {
